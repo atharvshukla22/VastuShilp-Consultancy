@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VastuShilp Consultancy | Krishnakant Sharma</title>
+  <meta name="description" content="Authentic Vastu Shastra consultation by Krishnakant Sharma, Indore. Home, Office, Shop and Online consultations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20a%20Vastu%20Consultation%20and%20need%20your%20guidance.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.651.826 5.143 2.308 7.211L.004 24l4.908-1.571c2.015 1.341 4.417 2.052 6.919 2.052 6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm0 22.385c-2.222 0-4.321-.611-6.195-1.688l-.444-.265-3.649 1.168 1.189-3.555-.291-.462a10.02 10.02 0 0 1-1.782-6.155C.859 5.856 5.856.859 11.431.859 17.006.859 22 5.856 22 11.431c0 5.575-4.997 10.554-10.569 10.554zM16.92 14.54c-.266-.134-1.572-.777-1.815-.866-.243-.089-.42-.134-.597.134-.177.266-.685.866-.84 1.043-.155.177-.31.2-.575.066-.266-.134-1.121-.413-2.133-1.257-.787-.655-1.318-1.464-1.473-1.73-.155-.266-.017-.411.116-.543.119-.119.266-.31.399-.465.134-.155.177-.266.266-.443.089-.177.045-.333-.022-.465-.067-.134-.597-1.438-.818-1.968-.216-.516-.435-.446-.597-.455-.155-.009-.333-.009-.51-.009-.177 0-.465.066-.708.333-.243.266-.931.91-.931 2.219 0 1.309.953 2.575 1.086 2.752.134.177 1.875 2.864 4.542 4.015.635.275 1.13.439 1.516.562.637.203 1.217.174 1.674.105.514-.078 1.572-.642 1.794-1.263.222-.621.222-1.153.155-1.263-.067-.11-.243-.177-.51-.31z"/></svg>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo" onclick="showPage('pg-home')">
+    <span class="om-symbol">ॐ</span>
+    <span>VastuShilp</span>
+  </div>
+  <ul class="nav-links">
+    <li><a data-page="pg-home"     onclick="showPage('pg-home')">Home</a></li>
+    <li><a data-page="pg-about"    onclick="showPage('pg-about')">About</a></li>
+    <li><a data-page="pg-services" onclick="showPage('pg-services')">Services</a></li>
+    <li><a data-page="pg-contact"  onclick="showPage('pg-contact')">Contact</a></li>
+  </ul>
+  <button class="cta-btn" onclick="showPage('pg-contact')">Seek Guidance</button>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('pg-home');closeMobile()">Home</a>
+  <a onclick="showPage('pg-about');closeMobile()">About</a>
+  <a onclick="showPage('pg-services');closeMobile()">Services</a>
+  <a onclick="showPage('pg-contact');closeMobile()">Contact</a>
+</div>
+
+<!-- ════════════════════ HOME ════════════════════ -->
+<div id="pg-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="mandala-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">॥ श्री गणेशाय नमः ॥</div>
+      <h1>Ancient Wisdom.<br><span>Modern Harmony.</span></h1>
+      <p>Authentic Vastu Shastra consultation rooted in Vedic tradition — balancing the Panchatatva in your home, office & business for prosperity, peace and cosmic alignment.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20a%20Vastu%20Consultation%20and%20need%20your%20guidance.%20Please%20guide%20me." class="cta-btn" target="_blank" rel="noopener noreferrer">Book Consultation</a>
+        <button class="ghost-btn" onclick="showPage('pg-services')">View Services</button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- CHAKRA STRIP -->
+  <div class="chakra-strip">
+    <span>🔱 Prithvi</span>
+    <span>🌊 Jal</span>
+    <span>🔥 Agni</span>
+    <span>💨 Vayu</span>
+    <span>✨ Akash</span>
+  </div>
+
+  <!-- ABOUT TEASER -->
+  <section class="section">
+    <div class="container two-col">
+      <div class="text-col fade-up">
+        <div class="section-eyebrow">The Parampara</div>
+        <h2>Rooted in Shastras.<br>Applied for Today.</h2>
+        <p>Led by <strong>Krishnakant Sharma</strong>, VastuShilp bridges ancient Vedic spatial science with modern architecture. Every space holds a living energy field — the Vastu Purusha — that shapes the wealth, health and harmony of its inhabitants.</p>
+        <p>Our approach is strictly <em>non-destructive</em>. No walls broken. No heavy construction. Pure elemental balancing.</p>
+        <button class="outline-btn" onclick="showPage('pg-about')">Our Story →</button>
+      </div>
+      <div class="img-col fade-up">
+        <div class="mandala-frame">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4e42b6e14d0a4230e83b09271873d970dde022d8.jpg" alt="Vastu Purusha Mandala" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section dark-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">What We Offer</div>
+        <h2>Sacred Services</h2>
+        <p>Tailored guidance for every phase of your life and business</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="scard-icon">🏠</div>
+          <h3>Griha Vastu</h3>
+          <p>Residential Vastu audit for family health, peace and prosperity.</p>
+          <button class="card-link" onclick="showPage('pg-services')">Explore →</button>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">🏪</div>
+          <h3>Vyapar Vastu</h3>
+          <p>Commercial alignment for shops, offices and factories.</p>
+          <button class="card-link" onclick="showPage('pg-services')">Explore →</button>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">🌿</div>
+          <h3>Bhoomi Parikshan</h3>
+          <p>Plot & property energy testing before you invest.</p>
+          <button class="card-link" onclick="showPage('pg-services')">Explore →</button>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">📱</div>
+          <h3>Online Paramarsh</h3>
+          <p>Video consultation for outstation & NRI clients worldwide.</p>
+          <button class="card-link" onclick="showPage('pg-services')">Explore →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat fade-up"><span class="stat-num">20+</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat fade-up"><span class="stat-num">500+</span><span class="stat-label">Happy Families</span></div>
+    <div class="stat fade-up"><span class="stat-num">200+</span><span class="stat-label">Business Clients</span></div>
+    <div class="stat fade-up"><span class="stat-num">50+</span><span class="stat-label">NRI Consultations</span></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">Client Blessings</div>
+        <h2>What Families Say</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Add real client review here."</p>
+          <div class="testi-name">Client Name</div>
+          <div class="testi-loc">City / Profession</div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Add real client review here."</p>
+          <div class="testi-name">Client Name</div>
+          <div class="testi-loc">City / Profession</div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Add real client review here."</p>
+          <div class="testi-name">Client Name</div>
+          <div class="testi-loc">City / Profession</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner fade-up">
+      <div class="section-eyebrow">Begin Your Journey</div>
+      <h2>Ready to Transform Your Space?</h2>
+      <p>Book a consultation with Krishnakant Ji today — online or in person.</p>
+      <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20a%20Vastu%20Consultation%20and%20need%20your%20guidance.%20Please%20guide%20me." class="cta-btn" target="_blank" rel="noopener noreferrer">Chat on WhatsApp 🙏</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="om-symbol">ॐ</span> VastuShilp Consultancy</div>
+        <p>Balancing the five elements to bring prosperity, health and harmony to homes and workplaces across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a onclick="showPage('pg-home')">Home</a></li>
+          <li><a onclick="showPage('pg-about')">About Us</a></li>
+          <li><a onclick="showPage('pg-services')">Services</a></li>
+          <li><a onclick="showPage('pg-contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:+919977110496">+91 9977110496</a></li>
+          <li>📞 <a href="tel:+919981397532">+91 9981397532</a></li>
+          <li>✉️ <a href="mailto:office.vastushilp@gmail.com">office.vastushilp@gmail.com</a></li>
+          <li>📍 72 Lalaram Nagar, Indore M.P.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>॥ सर्वे भवन्तु सुखिनः ॥</span>
+      <span>&copy; 2026 VastuShilp Consultancy by Krishnakant Sharma</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════ ABOUT ════════════════════ -->
+<div id="pg-about" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a onclick="showPage('pg-home')">Home</a> / About</div>
+      <h1>The Parampara</h1>
+      <p>Rooted in Vedic wisdom. Guided by dharma. Applied for modern prosperity.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div class="text-col fade-up">
+        <div class="section-eyebrow">Who We Are</div>
+        <h2>Rooted in Shastras.<br>Applied for Today.</h2>
+        <p>Led by <strong>Krishnakant Sharma</strong>, VastuShilp Consultancy bridges the gap between ancient Vedic spatial science and modern architecture. Every physical space holds a living energy field — the Vastu Purusha — that directly shapes the wealth, health, and peace of its inhabitants.</p>
+        <p>With over two decades of experience consulting hundreds of families and businesses across Madhya Pradesh, Krishnakant Ji has helped unlock prosperity, resolve family disputes, improve business cash flows, and create harmonious living spaces — all without a single brick being demolished.</p>
+        <p>Our approach is strictly non-destructive. We balance the Panchatatva (five elements) through intelligent placement, color therapy, yantras, and elemental remedies.</p>
+        <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20a%20Vastu%20Consultation%20and%20need%20your%20guidance.%20Please%20guide%20me." class="cta-btn" target="_blank" rel="noopener noreferrer">Speak to Krishnakant Ji</a>
+      </div>
+      <div class="img-col fade-up">
+        <div class="mandala-frame">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4e42b6e14d0a4230e83b09271873d970dde022d8.jpg" alt="Vastu Purusha Mandala" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="stat fade-up"><span class="stat-num">20+</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat fade-up"><span class="stat-num">500+</span><span class="stat-label">Happy Families</span></div>
+    <div class="stat fade-up"><span class="stat-num">200+</span><span class="stat-label">Business Clients</span></div>
+    <div class="stat fade-up"><span class="stat-num">50+</span><span class="stat-label">NRI Consultations</span></div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">Our Principles</div>
+        <h2>Core Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card fade-up">
+          <div class="v-icon">🕉️</div>
+          <h3>Shastra-Based</h3>
+          <p>Every recommendation is rooted in authentic Vastu Shastra texts, not trends or superstition.</p>
+        </div>
+        <div class="value-card fade-up">
+          <div class="v-icon">🔱</div>
+          <h3>Non-Destructive</h3>
+          <p>We never ask you to break walls. All solutions use placement, color, and elemental balancing.</p>
+        </div>
+        <div class="value-card fade-up">
+          <div class="v-icon">🪔</div>
+          <h3>Honest Guidance</h3>
+          <p>We give truthful assessments — even when no major changes are actually needed.</p>
+        </div>
+        <div class="value-card fade-up">
+          <div class="v-icon">🌏</div>
+          <h3>Accessible</h3>
+          <p>Online consultations ensure Vastu guidance reaches families anywhere in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="om-symbol">ॐ</span> VastuShilp Consultancy</div>
+        <p>Balancing the five elements to bring prosperity, health and harmony to homes and workplaces across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a onclick="showPage('pg-home')">Home</a></li>
+          <li><a onclick="showPage('pg-about')">About Us</a></li>
+          <li><a onclick="showPage('pg-services')">Services</a></li>
+          <li><a onclick="showPage('pg-contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:+919977110496">+91 9977110496</a></li>
+          <li>📞 <a href="tel:+919981397532">+91 9981397532</a></li>
+          <li>✉️ <a href="mailto:office.vastushilp@gmail.com">office.vastushilp@gmail.com</a></li>
+          <li>📍 72 Lalaram Nagar, Indore M.P.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>॥ सर्वे भवन्तु सुखिनः ॥</span>
+      <span>&copy; 2026 VastuShilp Consultancy by Krishnakant Sharma</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════ SERVICES ════════════════════ -->
+<div id="pg-services" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a onclick="showPage('pg-home')">Home</a> / Services</div>
+      <h1>Sacred Services</h1>
+      <p>Personalized Vastu guidance for homes, offices, shops, plots and online consultations.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">What We Do</div>
+        <h2>Areas of Consultation</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="scard-icon">🏠</div>
+          <h3>Griha Vastu</h3>
+          <p>Complete residential Vastu audit balancing all five elements for family health, peace and financial stability.</p>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20Griha%20Vastu%20and%20need%20your%20consultation.%20Please%20guide%20me." class="card-link-anchor" target="_blank">Enquire →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">🏪</div>
+          <h3>Vyapar Vastu</h3>
+          <p>Commercial spatial alignment for shops, offices and factories to remove energy blockages and accelerate growth.</p>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20Vyapar%20Vastu%20and%20need%20your%20consultation.%20Please%20guide%20me." class="card-link-anchor" target="_blank">Enquire →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">🌿</div>
+          <h3>Bhoomi Parikshan</h3>
+          <p>Plot and property selection guidance to ensure your foundation rests on energetically positive soil.</p>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20Bhoomi%20Parikshan%20and%20need%20your%20consultation.%20Please%20guide%20me." class="card-link-anchor" target="_blank">Enquire →</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="scard-icon">📱</div>
+          <h3>Online Paramarsh</h3>
+          <p>Digital map reviews and video consultations for outstation and NRI clients — guidance from anywhere.</p>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20Online%20Paramarsh%20and%20need%20your%20consultation.%20Please%20guide%20me." class="card-link-anchor" target="_blank">Enquire →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">Packages</div>
+        <h2>Consultation Plans</h2>
+        <p>Choose the level of guidance your property needs</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card fade-up">
+          <div class="plan-icon">🗺️</div>
+          <h3>Basic Map Review</h3>
+          <p>Ideal for quick checks on new or existing properties.</p>
+          <ul>
+            <li>Digital layout / map review</li>
+            <li>Major Vastu dosha identification</li>
+            <li>Elemental remedy suggestions</li>
+            <li>1 Video Call — 45 minutes</li>
+            <li>Written summary report</li>
+          </ul>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20the%20Basic%20Map%20Review%20package%20and%20need%20your%20consultation.%20Please%20guide%20me." class="outline-btn btn-full" target="_blank">Enquire Now</a>
+        </div>
+        <div class="plan-card featured fade-up">
+          <div class="plan-badge">Most Chosen</div>
+          <div class="plan-icon">🏛️</div>
+          <h3>Sampoorna Vastu</h3>
+          <p>Complete physical audit for homes, offices and shops.</p>
+          <ul>
+            <li>Physical site visit by Krishnakant Ji</li>
+            <li>16-Zone energy &amp; compass mapping</li>
+            <li>Color therapy &amp; furniture placement</li>
+            <li>Non-destructive physical remedies</li>
+            <li>Yantra placements if required</li>
+            <li>Post-visit follow-up call</li>
+          </ul>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20the%20Sampoorna%20Vastu%20package%20and%20need%20your%20consultation.%20Please%20guide%20me." class="cta-btn btn-full" target="_blank">Book Site Visit</a>
+        </div>
+        <div class="plan-card fade-up">
+          <div class="plan-icon">🏗️</div>
+          <h3>Nav-Nirman</h3>
+          <p>End-to-end guidance for plots &amp; under-construction sites.</p>
+          <ul>
+            <li>Plot selection &amp; soil energy testing</li>
+            <li>Architect coordination &amp; zone mapping</li>
+            <li>Room allocation &amp; gate direction</li>
+            <li>Muhurat timing for construction</li>
+            <li>2 on-site visits during construction</li>
+          </ul>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20the%20Nav-Nirman%20package%20and%20need%20your%20consultation.%20Please%20guide%20me." class="outline-btn btn-full" target="_blank">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="om-symbol">ॐ</span> VastuShilp Consultancy</div>
+        <p>Balancing the five elements to bring prosperity, health and harmony to homes and workplaces across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a onclick="showPage('pg-home')">Home</a></li>
+          <li><a onclick="showPage('pg-about')">About Us</a></li>
+          <li><a onclick="showPage('pg-services')">Services</a></li>
+          <li><a onclick="showPage('pg-contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:+919977110496">+91 9977110496</a></li>
+          <li>📞 <a href="tel:+919981397532">+91 9981397532</a></li>
+          <li>✉️ <a href="mailto:office.vastushilp@gmail.com">office.vastushilp@gmail.com</a></li>
+          <li>📍 72 Lalaram Nagar, Indore M.P.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>॥ सर्वे भवन्तु सुखिनः ॥</span>
+      <span>&copy; 2026 VastuShilp Consultancy by Krishnakant Sharma</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════ CONTACT ════════════════════ -->
+<div id="pg-contact" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a onclick="showPage('pg-home')">Home</a> / Contact</div>
+      <h1>Reach Us</h1>
+      <p>Call, WhatsApp, email or visit. We respond to every inquiry personally.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-layout">
+
+      <div class="contact-left fade-up">
+        <div class="contact-info-box">
+          <div class="section-eyebrow">Direct Contact</div>
+          <h2>Get in Touch</h2>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">📞</div>
+            <div>
+              <div class="cinfo-label">Phone</div>
+              <div class="cinfo-val"><a href="tel:+919977110496">+91 9977110496</a><br><a href="tel:+919981397532">+91 9981397532</a></div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">✉️</div>
+            <div>
+              <div class="cinfo-label">Email</div>
+              <div class="cinfo-val"><a href="mailto:office.vastushilp@gmail.com">office.vastushilp@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">📍</div>
+            <div>
+              <div class="cinfo-label">Office</div>
+              <div class="cinfo-val">72, Lalaram Nagar, Near Geeta Bhavan Mandir,<br>Indore, Madhya Pradesh — 452001</div>
+            </div>
+          </div>
+          <a href="https://wa.me/919977110496?text=Jai%20Shri%20Ram%20%F0%9F%99%8F%20I%20am%20interested%20in%20a%20Vastu%20Consultation%20and%20need%20your%20guidance.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer" class="wa-big-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.651.826 5.143 2.308 7.211L.004 24l4.908-1.571c2.015 1.341 4.417 2.052 6.919 2.052 6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm0 22.385c-2.222 0-4.321-.611-6.195-1.688l-.444-.265-3.649 1.168 1.189-3.555-.291-.462a10.02 10.02 0 0 1-1.782-6.155C.859 5.856 5.856.859 11.431.859 17.006.859 22 5.856 22 11.431c0 5.575-4.997 10.554-10.569 10.554z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right fade-up">
+        <div class="form-box">
+          <div class="section-eyebrow">Send Enquiry</div>
+          <h2>Book a Consultation</h2>
+          <form onsubmit="handleForm(event)">
+            <div class="form-row">
+              <div class="fg"><label>Your Name</label><input type="text" id="f-name" placeholder="Ramesh Sharma" required></div>
+              <div class="fg"><label>Phone Number</label><input type="tel" id="f-phone" placeholder="+91 98765 43210" required></div>
+            </div>
+            <div class="fg">
+              <label>Service Needed</label>
+              <select id="f-service">
+                <option value="">Select a Service</option>
+                <option>Griha Vastu (Residential)</option>
+                <option>Vyapar Vastu (Commercial)</option>
+                <option>Bhoomi Parikshan (Plot)</option>
+                <option>Online Paramarsh (Video Call)</option>
+                <option>Basic Map Review Package</option>
+                <option>Sampoorna Vastu Package</option>
+                <option>Nav-Nirman Package</option>
+              </select>
+            </div>
+            <div class="fg"><label>Your Message</label><textarea id="f-message" placeholder="Describe your property and what guidance you need..."></textarea></div>
+            <button type="submit" class="cta-btn btn-full">Send via WhatsApp →</button>
+          </form>
+        </div>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps?q=Lalaram+Nagar+Indore+Madhya+Pradesh+452001&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="om-symbol">ॐ</span> VastuShilp Consultancy</div>
+        <p>Balancing the five elements to bring prosperity, health and harmony to homes and workplaces across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a onclick="showPage('pg-home')">Home</a></li>
+          <li><a onclick="showPage('pg-about')">About Us</a></li>
+          <li><a onclick="showPage('pg-services')">Services</a></li>
+          <li><a onclick="showPage('pg-contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:+919977110496">+91 9977110496</a></li>
+          <li>📞 <a href="tel:+919981397532">+91 9981397532</a></li>
+          <li>✉️ <a href="mailto:office.vastushilp@gmail.com">office.vastushilp@gmail.com</a></li>
+          <li>📍 72 Lalaram Nagar, Indore M.P.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>॥ सर्वे भवन्तु सुखिनः ॥</span>
+      <span>&copy; 2026 VastuShilp Consultancy. All Rights Reserved</span>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
